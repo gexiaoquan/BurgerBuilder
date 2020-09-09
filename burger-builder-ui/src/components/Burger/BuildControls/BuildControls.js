@@ -17,12 +17,17 @@ const buildControls = (props) => {
                 return <BuildControl
                     key={control.type}
                     label={control.label}
-                    addClick={() => props.addClick(control.type)} 
+                    addClick={() => props.addClick(control.type)}
                     removeClick={() => props.removeClick(control.type)}
                     removeDisabled={props.removeDisabled.includes(control.type)}
                 />
             }
         )}
+        <button
+            className={classes.OrderButton}
+            disabled={props.orderDisabled}
+            onClick={props.ordered}
+        >ORDER NOW</button>
     </div>
 };
 
