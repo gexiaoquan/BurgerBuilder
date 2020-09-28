@@ -29,7 +29,6 @@ const Orders = (props) => {
     let orderList = <Spinner />
     if (!loading) {
         orderList = orders.map(order => {
-            console.log(order);
             return <Order key={order.id} ingredients={order.ingredients} totalPrice={order.price} />
         });
     }
