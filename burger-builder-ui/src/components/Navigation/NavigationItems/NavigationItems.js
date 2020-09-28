@@ -5,8 +5,8 @@ import { withRouter } from 'react-router-dom';
 
 const navigationItems = (props) => (
     <ul className={classes.NavigationItems}>
-        <NavigationItem link="/" active={'/' === props.match.path}>Burger Builder</NavigationItem>
-        <NavigationItem link="/checkout" active={'/checkout' === props.match.path}>Checkout</NavigationItem>
+        <NavigationItem link="/">Burger Builder</NavigationItem>
+        <NavigationItem link="/orders">Orders</NavigationItem>
     </ul>
 );
 
